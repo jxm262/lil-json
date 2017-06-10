@@ -8,8 +8,26 @@
     "build": "babel src -d lib",
     "test": "mocha --compilers js:babel-register --recursive"
   },
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jxm262/lil-json.git"
+  },
+  "author": "Justin Maat jxm262@gmail.com",
+  "bugs": {
+    "url": "https://github.com/jxm262/lil-json/issues"
+  },
+  "homepage": "https://github.com/jxm262/lil-json#readme",
+  "keywords": [
+    "lil-json",
+    "shorten json",
+    "shrink json"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/jxm262/lil-json/blob/master/LICENSE"
+    }
+  ],
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-preset-env": "^1.5.2",
