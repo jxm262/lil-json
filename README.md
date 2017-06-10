@@ -1,5 +1,5 @@
 # lil-json
-Convert Large Json files into lil json files
+Convert large json into lil json!
 
 ## Installation
 ```
