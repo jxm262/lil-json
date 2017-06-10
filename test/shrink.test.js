@@ -1,54 +1,18 @@
-var chai = require('chai');
-var sinon = require('sinon');
+import shrink from '../src/shrink'
+import chai from 'chai'
+import sinon from 'sinon'
 
-var json = require('../temp1.json');
+
+var json = require('../temp1.json')
 
 
 describe('shrink', function () {
-    it('runs app', function () {
+    it('makes it smaller', function () {
 
-        var liljson = shrink(json);
+        const expectedJson = `{"1_obj":{"2_obj":{"3_obj":{"value":"some value","arr_value":[[["nested arr val 1","nested arr val 2","nested arr val 3"],["nested arr val 1","nested arr val 2","nested arr val 3"],["nested arr val 1","nested arr val 2","nested arr val 3"]]]}}},"1_str":"level 1 string","1_num":1.01,"1_null":null,"1_arr":[["nested arr val 1","nested arr val 2","nested arr val 3"],["nested arr val 1","nested arr val 2","nested arr val 3"],["nested arr val 1","nested arr val 2","nested arr val 3"]]}`
 
-        console.log('lilJson ', JSON.stringify(liljson));
+        const liljson = shrink(json)
+
+        JSON.stringify(liljson).should.equal(expectedJson)
     });
 });
-
-function shrink(data) {
-
-    if (Array.isArray(data)) {
-        return shrinkArray(data)
-    }
-
-    if ((typeof data === "object") && (data !== null)) {
-        return shrinkObj(data)
-    }
-
-    return data;
-}
-
-function shrinkArray(arr) {
-    const shortArr = arr.slice(0, 3)
-
-    return shortArr.map((el) =>{
-        return shrink(el)
-    })
-}
-
-function shrinkObj(obj) {
-
-    const keys = Object.keys(obj)
-
-    if (keys.length === 0) {
-        return obj;
-    } else {
-        return keys.reduce((accum, key) => {
-
-            const value = shrink(obj[key])
-            const shrunkObj = { [key] : value }
-
-            const newObj = Object.assign({}, accum,  shrunkObj)
-
-            return newObj
-        }, {})
-    }
-}

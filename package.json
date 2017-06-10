@@ -1,8 +1,8 @@
 {
   "name": "lil-json",
   "version": "1.0.0",
-  "description": "turn Large json into lil json",
-  "main": "src/index.js",
+  "description": "turn Large Json into lil json",
+  "main": "lib/index.js",
   "scripts": {
     "start": "babel-node src/index.js",
     "build": "babel src -d lib",

@@ -1,0 +1,88 @@
+{
+  "1_obj": {
+    "2_obj": {
+      "3_obj": {
+        "value": "some value",
+        "arr_value": [
+          [
+            [
+              "nested arr val 1",
+              "nested arr val 2",
+              "nested arr val 3",
+              "nested arr val 4",
+              "nested arr val 5"
+            ],
+            [
+              "nested arr val 1",
+              "nested arr val 2",
+              "nested arr val 3",
+              "nested arr val 4",
+              "nested arr val 5"
+            ],
+            [
+              "nested arr val 1",
+              "nested arr val 2",
+              "nested arr val 3",
+              "nested arr val 4",
+              "nested arr val 5"
+            ],
+            [
+              "nested arr val 1 - should not be included",
+              "nested arr val 2 - should not be included",
+              "nested arr val 3 - should not be included",
+              "nested arr val 4 - should not be included",
+              "nested arr val 5 - should not be included"
+            ],
+            [
+              "nested arr val 1 - should not be included",
+              "nested arr val 2 - should not be included",
+              "nested arr val 3 - should not be included",
+              "nested arr val 4 - should not be included",
+              "nested arr val 5 - should not be included"
+            ]
+          ]
+        ]
+      }
+    }
+  },
+  "1_str": "level 1 string",
+  "1_num": 1.01,
+  "1_null": null,
+  "1_arr": [
+    [
+      "nested arr val 1",
+      "nested arr val 2",
+      "nested arr val 3",
+      "nested arr val 4",
+      "nested arr val 5"
+    ],
+    [
+      "nested arr val 1",
+      "nested arr val 2",
+      "nested arr val 3",
+      "nested arr val 4",
+      "nested arr val 5"
+    ],
+    [
+      "nested arr val 1",
+      "nested arr val 2",
+      "nested arr val 3",
+      "nested arr val 4",
+      "nested arr val 5"
+    ],
+    [
+      "nested arr val 1 - should not be included",
+      "nested arr val 2 - should not be included",
+      "nested arr val 3 - should not be included",
+      "nested arr val 4 - should not be included",
+      "nested arr val 5 - should not be included"
+    ],
+    [
+      "nested arr val 1 - should not be included",
+      "nested arr val 2 - should not be included",
+      "nested arr val 3 - should not be included",
+      "nested arr val 4 - should not be included",
+      "nested arr val 5 - should not be included"
+    ]
+  ]
+}
