@@ -1,4 +1,4 @@
-# lil-json
+# lil-json  [![Build Status](https://travis-ci.org/jxm262/lil-json.svg?branch=master)](https://travis-ci.org/jxm262/lil-json)
 Convert large json into lil json!
 
 ## Installation
