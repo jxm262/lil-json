@@ -1,0 +1,21 @@
+{
+  "name": "lil-json",
+  "version": "1.0.0",
+  "description": "turn Large json into lil json",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "babel-node src/index.js",
+    "build": "babel src -d lib",
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.5.2",
+    "babel-preset-es2015": "^6.24.1"
+  },
+  "dependencies": {
+    "minimist": "^1.2.0"
+  }
+}
